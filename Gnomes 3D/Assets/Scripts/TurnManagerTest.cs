@@ -28,6 +28,7 @@ public class TurnManagerTest : MonoBehaviour
 
     public void ChangeTurn()
     {
+        
         if (currentPlayerIndex == 1)
         {
             currentPlayerIndex = 2;

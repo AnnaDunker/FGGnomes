@@ -7,16 +7,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public Transform groundCheck;
     [SerializeField] LayerMask ground;
     [SerializeField] private Rigidbody CharacterBody;
-
     [SerializeField] public int playerIndex;
 
-    //private float horizontalInput = 10f;
+    
     private float speed = 10f;
     private float turnSpeed = 140f;
     
-    
-    
-
+ 
 
     // Start is called before the first frame update
     void Start()
@@ -45,28 +42,8 @@ public class PlayerController : MonoBehaviour
                 Jump();
             }
 
-
         }
 
-
-
-
-
-       /* if (Input.GetAxis("Horizontal") != 0)
-        {
-            transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime * Input.GetAxis("Horizontal"));
-        }
-
-        if (Input.GetAxis("Vertical") != 0)
-        {
-            transform.Translate(Vector3.forward * Time.deltaTime * speed * Input.GetAxis("Vertical"));
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
-        {
-            Jump();
-        }
-             */   
     }
 
     private void Jump ()

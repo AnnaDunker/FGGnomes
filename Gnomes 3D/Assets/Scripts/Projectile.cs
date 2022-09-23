@@ -26,7 +26,7 @@ public class Projectile : MonoBehaviour
     {
         GameObject collisionObject = collision.gameObject;
         DestructionFree destruction = collisionObject.GetComponent<DestructionFree>();
-        TurnManagerTest.GetInstance().ChangeTurn();
+        Destroy(this.gameObject);
 
 
         if (destruction == null)
