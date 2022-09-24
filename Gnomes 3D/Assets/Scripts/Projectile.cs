@@ -26,14 +26,15 @@ public class Projectile : MonoBehaviour
     {
         GameObject collisionObject = collision.gameObject;
         DestructionFree destruction = collisionObject.GetComponent<DestructionFree>();
-        Destroy(this.gameObject);
 
+        
 
         if (destruction == null)
         {
             Destroy(collisionObject);
         } 
         
+        Destroy(this.gameObject);
     }
 
 }

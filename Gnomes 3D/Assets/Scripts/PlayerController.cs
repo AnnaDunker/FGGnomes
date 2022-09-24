@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
+
 
 public class PlayerController : MonoBehaviour
 {
@@ -8,6 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] LayerMask ground;
     [SerializeField] private Rigidbody CharacterBody;
     [SerializeField] public int playerIndex;
+    [SerializeField] private CinemachineVirtualCamera vcam;
 
     
     private float speed = 10f;
@@ -24,7 +27,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (TurnManagerTest.GetInstance().IsItPlayerTurn(playerIndex))
+        if (TurnManager.GetInstance().IsItPlayerTurn(playerIndex))
         {
 
             if (Input.GetAxis("Horizontal") != 0)
@@ -42,6 +45,12 @@ public class PlayerController : MonoBehaviour
                 Jump();
             }
 
+            vcam.Priority = 1;
+        }
+
+        else
+        {
+            vcam.Priority = 0;
         }
 
     }

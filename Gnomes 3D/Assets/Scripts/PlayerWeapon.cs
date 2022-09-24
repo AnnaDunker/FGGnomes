@@ -14,11 +14,12 @@ public class PlayerWeapon : MonoBehaviour
     {
         didShoot = false;
 
-        if (TurnManagerTest.GetInstance().IsItPlayerTurn(playerController.playerIndex))
+        if (TurnManager.GetInstance().IsItPlayerTurn(playerController.playerIndex))
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
                 GameObject newProjectile = Instantiate(projectilePrefab, ShootingStartPosition.position, transform.rotation);
+
                 newProjectile.GetComponent<Projectile>().Initialize();
                 
                 didShoot = true;
@@ -32,7 +33,7 @@ public class PlayerWeapon : MonoBehaviour
     {
         if (didShoot)
         {
-            TurnManagerTest.GetInstance().ChangeTurn();
+            TurnManager.GetInstance().ChangeTurn();
         }
         
     }

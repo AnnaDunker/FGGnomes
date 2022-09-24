@@ -4,38 +4,39 @@ using UnityEngine;
 
 public class TurnManager : MonoBehaviour
 {
+    private static TurnManager instance;
+    private int currentPlayerIndex;
 
-
-
-    /*
-    [SerializeField] private ActivePlayer player1;
-    [SerializeField] private ActivePlayer player2;
-
-    private ActivePlayer currentPlayer;
-
-    void Start()
+    private void Awake()
     {
-        player1.AssignManager(this);
-        player2.AssignManager(this);
-
-        currentPlayer = player1;
+        if (instance == null)
+        {
+            instance = this;
+            currentPlayerIndex = 1;
+        }
     }
 
-    public ActivePlayer GetCurrentPlayer()
-    { 
-        return currentPlayer;
+    public bool IsItPlayerTurn(int index)
+    {
+        return index == currentPlayerIndex;
+    }
+
+    public static TurnManager GetInstance()
+    {
+        return instance;
     }
 
     public void ChangeTurn()
     {
-        if (player1 == currentPlayer)
-        {
-            currentPlayer = player2;
-        }
-        else if (player2 == currentPlayer)
-        {
-            currentPlayer = player1;
-        }
 
-    } */
+        if (currentPlayerIndex == 1)
+        {
+            currentPlayerIndex = 2;
+        }
+        else if (currentPlayerIndex == 2)
+        {
+            currentPlayerIndex = 1;
+        }
+    }
+
 }
