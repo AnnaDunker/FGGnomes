@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] LayerMask ground;
     [SerializeField] private Rigidbody CharacterBody;
     [SerializeField] public int playerIndex;
+
     [SerializeField] private CinemachineVirtualCamera vcam;
 
     
@@ -17,12 +18,7 @@ public class PlayerController : MonoBehaviour
     private float turnSpeed = 140f;
     
  
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+  
 
     // Update is called once per frame
     void Update()

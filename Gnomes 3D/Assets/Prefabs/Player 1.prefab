@@ -764,7 +764,7 @@ GameObject:
   - component: {fileID: 5623590681319681031}
   - component: {fileID: 5623590681319681030}
   - component: {fileID: 5623590681319681081}
-  - component: {fileID: 5623590681319681080}
+  - component: {fileID: 8244892477303818230}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Untagged
@@ -874,6 +874,7 @@ MonoBehaviour:
     m_Bits: 64
   CharacterBody: {fileID: 5623590681319681031}
   playerIndex: 1
+  vcam: {fileID: 0}
 --- !u!114 &5623590681319681081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -889,18 +890,20 @@ MonoBehaviour:
   projectilePrefab: {fileID: 1917647130882429783, guid: 2f1bd0a93a1bead4cbfa12bddf1f845c, type: 3}
   ShootingStartPosition: {fileID: 5623590680847053771}
   playerController: {fileID: 5623590681319681030}
---- !u!114 &5623590681319681080
-MonoBehaviour:
+--- !u!136 &8244892477303818230
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5623590681319681025}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49b332d355f2fdf4882f15c8a58ce149, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5623590681330048152
 GameObject:
   m_ObjectHideFlags: 0

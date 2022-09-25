@@ -17,13 +17,10 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            TakeDamage(2);
-        }
+       
     }
 
-    void TakeDamage (int damage)
+    public void TakeDamage (int damage)
     {
         currentHealth -= damage;
 
