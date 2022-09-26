@@ -12,7 +12,7 @@ public class Projectile : MonoBehaviour
     public void Initialize()
     {
         isActive = true;
-        projectileBody.AddForce(transform.forward * 50f + transform.up * 250f);
+        projectileBody.AddForce(transform.forward * 50f + transform.up * 200f);
     }
 
     void Update()
