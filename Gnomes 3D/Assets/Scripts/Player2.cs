@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player2 : MonoBehaviour
-{
+{ /*
     
     public int maxHealth = 20;
     public int currentHealth;
 
-    public HealthBar2 healthBar;
+    public HealthBar2 healthBar2;
 
     private void Start()
     {
         currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
+        healthBar2.SetMaxHealth(maxHealth);
     }
 
     private void Update()
@@ -25,8 +25,8 @@ public class Player2 : MonoBehaviour
     {
         currentHealth -= damage;
 
-        healthBar.SetHealth(currentHealth);
+        healthBar2.SetHealth(currentHealth);
     }
     
-   
+   */
 }

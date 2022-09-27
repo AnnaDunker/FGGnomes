@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (TurnManager.GetInstance().IsItPlayerTurn(playerIndex))
         {
 
@@ -40,7 +41,8 @@ public class PlayerController : MonoBehaviour
             {
                 Jump();
             }
-
+            
+            
             vcam.Priority = 1;
         }
 
