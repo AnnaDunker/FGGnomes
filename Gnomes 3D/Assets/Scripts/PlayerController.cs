@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     
     private float speed = 10f;
     private float turnSpeed = 140f;
+    private float runningSpeed = 30;
     
  
   
@@ -40,6 +41,16 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
             {
                 Jump();
+            }
+
+            if (Input.GetKeyDown(KeyCode.LeftShift) && IsGrounded())
+            {
+                speed = 17; 
+            }
+            
+            if (Input.GetKeyUp(KeyCode.LeftShift))
+            {
+                speed = 10;
             }
             
             
