@@ -13,17 +13,17 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private CinemachineVirtualCamera vcam;
 
-    
+
     private float speed = 10f;
     private float turnSpeed = 100f;
-    
- 
-  
+
+
+
 
     // Update is called once per frame
     void Update()
     {
-        
+
         if (TurnManager.GetInstance().IsItPlayerTurn(playerIndex))
         {
 
@@ -44,15 +44,15 @@ public class PlayerController : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.LeftShift) && IsGrounded())
             {
-                speed = 17; 
+                speed = 17;
             }
-            
+
             if (Input.GetKeyUp(KeyCode.LeftShift))
             {
                 speed = 10;
             }
-            
-            
+
+
             vcam.Priority = 1;
         }
 
@@ -63,11 +63,11 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    private void Jump ()
+    private void Jump()
     {
         CharacterBody.velocity = Vector3.up * 10f;
     }
- 
+
     bool IsGrounded()
     {
         return Physics.CheckSphere(groundCheck.position, 0.1f, ground);

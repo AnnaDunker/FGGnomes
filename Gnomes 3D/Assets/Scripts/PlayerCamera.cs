@@ -16,6 +16,11 @@ public class PlayerCamera : MonoBehaviour
 
     private void Update()
     {
+       
+    }
+
+    private void LateUpdate()
+    {
         if (player != null)
         {
             StartCoroutine(waiter());
@@ -26,11 +31,6 @@ public class PlayerCamera : MonoBehaviour
                 transform.position = player.transform.position + offset;
             }
         }
-    }
-
-    private void LateUpdate()
-    {
-        
     }
 
 }
