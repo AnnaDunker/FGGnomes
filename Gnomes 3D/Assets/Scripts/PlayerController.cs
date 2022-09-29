@@ -41,6 +41,16 @@ public class PlayerController : MonoBehaviour
             {
                 Jump();
             }
+
+            if (Input.GetKeyDown(KeyCode.LeftShift) && IsGrounded())
+            {
+                speed = 17; 
+            }
+            
+            if (Input.GetKeyUp(KeyCode.LeftShift))
+            {
+                speed = 10;
+            }
             
             
             vcam.Priority = 1;
