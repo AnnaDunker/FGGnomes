@@ -6,36 +6,31 @@ public class PlayerCamera : MonoBehaviour
 {
     public GameObject player;
     private Vector3 offset = new Vector3(0, 12, -13);
-    private float timeLeft = 5f;
 
     private void Start()
     {
         
     }
 
+   
+
     private void Update()
     {
-        if (timeLeft >= 0)
+        if (player != null)
         {
-            timeLeft -= Time.deltaTime;
-        }
-        else
-        {
-            ChangeCamera();
-        }
+            StartCoroutine(waiter());
 
-        void ChangeCamera()
-        {
-            transform.position = player.transform.position + offset;
+            IEnumerator waiter()
+            {
+                yield return new WaitForSeconds(4);
+                transform.position = player.transform.position + offset;
+            }
         }
     }
 
     private void LateUpdate()
     {
-        if (player != null)
-        {
-            transform.position = player.transform.position + offset;
-        }
+        
     }
 
 }
