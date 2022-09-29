@@ -68,8 +68,8 @@ MonoBehaviour:
     y: 0
     width: 428
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -269,8 +269,8 @@ MonoBehaviour:
     y: 0
     width: 1197
     height: 688
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -346,13 +346,13 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\anna.dunker\OneDrive - Change Maker Education\Documents\FGGnomes\Gnomes
     3D
@@ -360,9 +360,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a6680000
-    m_LastClickedID: 26790
-    m_ExpandedIDs: 000000009268000000ca9a3b
+    m_SelectedIDs: 1a620000
+    m_LastClickedID: 25114
+    m_ExpandedIDs: 000000001a62000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -390,7 +390,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000092680000
+    m_ExpandedIDs: 000000001a620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -520,7 +520,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: def4ffff206500008e650000a465000094660000
+      m_ExpandedIDs: 18fbffff865e00000a5f0000ac5f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -769,9 +769,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.44775, y: -19.36454, z: -16.015942}
+    m_Target: {x: -39.596188, y: 0.20849264, z: 0.07914877}
     speed: 2
-    m_Value: {x: 2.44775, y: -19.36454, z: -16.015942}
+    m_Value: {x: -39.596188, y: 0.20849264, z: 0.07914877}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -818,13 +818,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.1831655, y: -0.45229015, z: 0.09628693, w: -0.8672028}
+    m_Target: {x: 0.1252299, y: -0.55440545, z: 0.0841374, w: 0.8180386}
     speed: 2
-    m_Value: {x: -0.18321793, y: -0.45241958, z: 0.09631448, w: -0.867451}
+    m_Value: {x: 0.12527286, y: -0.55459565, z: 0.084166266, w: 0.81831926}
   m_Size:
-    m_Target: 31.325068
+    m_Target: 76.12048
     speed: 2
-    m_Value: 31.325068
+    m_Value: 76.12048
   m_Ortho:
     m_Target: 0
     speed: 2
