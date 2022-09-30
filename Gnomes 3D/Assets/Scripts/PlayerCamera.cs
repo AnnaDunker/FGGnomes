@@ -12,11 +12,24 @@ public class PlayerCamera : MonoBehaviour
         
     }
 
+   
+
+    private void Update()
+    {
+       
+    }
+
     private void LateUpdate()
     {
         if (player != null)
         {
-            transform.position = player.transform.position + offset;
+            StartCoroutine(waiter());
+
+            IEnumerator waiter()
+            {
+                yield return new WaitForSeconds(4);
+                transform.position = player.transform.position + offset;
+            }
         }
     }
 
