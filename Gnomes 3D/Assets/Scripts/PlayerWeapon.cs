@@ -33,7 +33,14 @@ public class PlayerWeapon : MonoBehaviour
     {
         if (didShoot)
         {
-            TurnManager.GetInstance().ChangeTurn();
+            StartCoroutine(waiter());
+
+            IEnumerator waiter()
+            {
+                yield return new WaitForSeconds(2);
+                TurnManager.GetInstance().ChangeTurn();
+            }
+            
         }
         
     }
