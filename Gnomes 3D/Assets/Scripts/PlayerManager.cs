@@ -18,6 +18,5 @@ public class PlayerManager : MonoBehaviour
 
     public GameObject playerOne;
     public GameObject playerTwo;
-    
 
 }

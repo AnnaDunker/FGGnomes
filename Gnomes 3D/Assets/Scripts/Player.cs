@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -15,16 +16,20 @@ public class Player : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
     }
 
-    private void Update()
-    {
-       
-    }
 
     public void TakeDamage (int damage)
     {
         currentHealth -= damage;
 
         healthBar.SetHealth(currentHealth);
+    }
+
+    public void Update()
+    {
+        if (currentHealth <= 0)
+        {
+            SceneManager.LoadScene("End Screen");
+        }
     }
 
 }

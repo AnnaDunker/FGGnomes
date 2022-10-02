@@ -19,7 +19,7 @@ public class WaveSpawner : MonoBehaviour
     public Wave[] waves;
     private int nextWave = 0;
 
-    public float timeBetweenWaves = 5f;
+    public float timeBetweenWaves = 10f;
     public float waveCountdown;
 
     //Check if enemy is alive
@@ -57,6 +57,7 @@ public class WaveSpawner : MonoBehaviour
         {
             if (state != SpawnState.Spawning)
             {
+                // start spawning wave
                 StartCoroutine(SpawnWave(waves[nextWave]));
             }
         }
