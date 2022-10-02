@@ -16,6 +16,11 @@ public class TurnManager : MonoBehaviour
         }
     }
 
+    public void Start()
+    {
+        
+    }
+
     public bool IsItPlayerTurn(int index)
     {
         return index == currentPlayerIndex;
