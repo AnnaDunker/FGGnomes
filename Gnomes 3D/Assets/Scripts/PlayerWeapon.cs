@@ -7,29 +7,40 @@ public class PlayerWeapon : MonoBehaviour
     [SerializeField] private GameObject projectilePrefab;
     [SerializeField] private Transform ShootingStartPosition;
     [SerializeField] private PlayerController playerController;
-   
+    
+    private int shotCount = 0;  
     private bool didShoot;
+
+    private void Start()
+    {
+        didShoot = false;
+    }
 
     private void Update()
     {
-        didShoot = false;
-
         if (TurnManager.GetInstance().IsItPlayerTurn(playerController.playerIndex))
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
-                GameObject newProjectile = Instantiate(projectilePrefab, ShootingStartPosition.position, transform.rotation);
+                if (didShoot == false)
+                {
+                    shotCount++;
+                    GameObject newProjectile = Instantiate(projectilePrefab, ShootingStartPosition.position, transform.rotation);
 
-                newProjectile.GetComponent<Projectile>().Initialize();
-                
-                didShoot = true;
+                    newProjectile.GetComponent<Projectile>().Initialize();
+                }
             }
+        }
+
+        if (shotCount == 3)
+        {
+            didShoot = true;
         }
 
             
     }
 
-    private void LateUpdate()
+   private void LateUpdate()
     {
         if (didShoot)
         {
@@ -37,12 +48,10 @@ public class PlayerWeapon : MonoBehaviour
 
             IEnumerator waiter()
             {
-                yield return new WaitForSeconds(2);
-                TurnManager.GetInstance().ChangeTurn();
+                yield return new WaitForSeconds(15);
+                didShoot=false;
             }
-            
         }
-        
     }
 
 }
