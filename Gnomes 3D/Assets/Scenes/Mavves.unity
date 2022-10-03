@@ -17912,6 +17912,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3120472944341754886, guid: 2c965af337a9d0f4197af355eccdc764, type: 3}
+      propertyPath: m_Priority
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3120472945472046914, guid: 2c965af337a9d0f4197af355eccdc764, type: 3}
+      propertyPath: m_Priority
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6423711530297351089, guid: 2c965af337a9d0f4197af355eccdc764, type: 3}
       propertyPath: healthBar
       value: 

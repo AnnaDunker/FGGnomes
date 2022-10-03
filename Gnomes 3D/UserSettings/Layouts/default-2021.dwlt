@@ -75,7 +75,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 64
+  controlID: 16
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -95,8 +95,8 @@ MonoBehaviour:
     y: 0
     width: 571
     height: 1299
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 338
+  controlID: 17
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -276,7 +276,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 339
+  controlID: 18
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -346,22 +346,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\User\Desktop\Projects\Gnomes 3D\Gnomes 3D
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d8700000
-    m_LastClickedID: 28888
-    m_ExpandedIDs: 000000002a7000002c7000002e700000307000003270000000ca9a3b
+    m_SelectedIDs: 686a0000
+    m_LastClickedID: 27240
+    m_ExpandedIDs: 00000000be690000c0690000c2690000c4690000c669000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -389,7 +389,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002a7000002c7000002e7000003070000032700000
+    m_ExpandedIDs: 00000000be690000c0690000c2690000c4690000c6690000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -519,7 +519,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 7ed5ffff62deffff06e4ffffc6efffffb0f8ffff
+      m_ExpandedIDs: 7ed3ffff34dbfffff2e3ffff06e4ffff28e4ffff18fbffff0c970000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -768,9 +768,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 44.347, y: 2.1821275, z: 43.94}
+    m_Target: {x: -43.177177, y: 4.133178, z: -42.952454}
     speed: 2
-    m_Value: {x: 44.347, y: 2.1821275, z: 43.94}
+    m_Value: {x: -43.177177, y: 4.133178, z: -42.952454}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -817,13 +817,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.059014916, y: 0.36111948, z: -0.022825452, w: 0.9305217}
+    m_Target: {x: -0.1910647, y: -0.02970745, z: 0.005846383, w: -0.9812622}
     speed: 2
-    m_Value: {x: 0.05900661, y: 0.36106864, z: -0.022822239, w: 0.9303907}
+    m_Value: {x: -0.19103624, y: -0.029703025, z: 0.005845512, w: -0.981116}
   m_Size:
-    m_Target: 78.909225
+    m_Target: 10
     speed: 2
-    m_Value: 78.909225
+    m_Value: 10
   m_Ortho:
     m_Target: 0
     speed: 2
