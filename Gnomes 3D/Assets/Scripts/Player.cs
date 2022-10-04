@@ -17,6 +17,14 @@ public class Player : MonoBehaviour
     }
 
 
+    public void Heal (int amount)
+    {
+        currentHealth += amount;
+        currentHealth = Mathf.Min(currentHealth, maxHealth);
+
+        healthBar.SetHealth(currentHealth);
+    }
+
     public void TakeDamage (int damage)
     {
         currentHealth -= damage;
