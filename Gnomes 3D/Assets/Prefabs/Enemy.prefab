@@ -445,7 +445,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2411293304780332306}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 1
+  m_Radius: 0.73
   m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 50
@@ -455,7 +455,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 1
-  m_BaseOffset: 0.5
+  m_BaseOffset: 0.37
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!33 &2411293304780332305
@@ -516,11 +516,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2411293304780332306}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.77, y: 1.23, z: 1.48}
-  m_Center: {x: 0, y: 0, z: 0.22}
+  m_Size: {x: 2.77, y: 1.23, z: 1.13}
+  m_Center: {x: 0, y: 0, z: 0.13}
 --- !u!54 &581005862342273173
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -562,7 +562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b44edb4811831f54fa46e35463273fab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 4
+  maxHealth: 2
   currentHealth: 0
 --- !u!114 &6850462480450494001
 MonoBehaviour:
