@@ -36,7 +36,7 @@ public class TurnTimer : MonoBehaviour
          
     }
 
-    void TimeRanOut()
+    public void TimeRanOut()
     {
         TurnManager.GetInstance().ChangeTurn();
     }

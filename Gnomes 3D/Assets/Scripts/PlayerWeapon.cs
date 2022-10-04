@@ -7,14 +7,20 @@ public class PlayerWeapon : MonoBehaviour
     [SerializeField] private GameObject projectilePrefab;
     [SerializeField] private Transform ShootingStartPosition;
     [SerializeField] private PlayerController playerController;
+    [SerializeField] private GameObject playerWeapon;
     
     private int shotCount = 0;  
     private bool didShoot;
 
     private void Start()
     {
-        didShoot = false;
+        projectilePrefab.gameObject.SetActive(true);
     }
+
+    /* public void AmmoRefill()
+    {
+        didShoot = false;
+    } */
 
     private void Update()
     {
@@ -32,25 +38,39 @@ public class PlayerWeapon : MonoBehaviour
             }
         }
 
+       /* if (TurnManager.GetInstance().IsItPlayerTurn(playerController.playerIndex))
+        {
+            StartCoroutine(waiter());
+
+            IEnumerator waiter()
+            {
+                yield return new WaitForSeconds(7);
+                didShoot = false;
+            }
+        } */
+
         if (shotCount == 3)
         {
-            didShoot = true;
-        }
-
+            projectilePrefab.gameObject.SetActive(false);
             
+            StartCoroutine(waiter());
+
+            IEnumerator waiter()
+            {
+                yield return new WaitForSeconds(15);
+                projectilePrefab.gameObject.SetActive(true);
+                shotCount = 0;
+
+            }
+
+            } 
     }
 
    private void LateUpdate()
     {
         if (didShoot)
         {
-            StartCoroutine(waiter());
-
-            IEnumerator waiter()
-            {
-                yield return new WaitForSeconds(15);
-                didShoot=false;
-            }
+            
         }
     }
 

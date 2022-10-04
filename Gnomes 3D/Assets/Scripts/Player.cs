@@ -24,6 +24,12 @@ public class Player : MonoBehaviour
         healthBar.SetHealth(currentHealth);
     }
 
+    public void ChangeHealth()
+    {
+        currentHealth += 10;
+        healthBar.SetHealth(currentHealth);
+    }
+
     public void Update()
     {
         if (currentHealth <= 0)
