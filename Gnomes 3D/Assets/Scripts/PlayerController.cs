@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
 
 
     private float speed = 10f;
-    private float turnSpeed = 100f;
+    private float turnSpeed = 110f;
 
 
 
@@ -64,7 +64,7 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
-        CharacterBody.velocity = Vector3.up * 6f;
+        CharacterBody.velocity = Vector3.up * 8f;
     }
 
     bool IsGrounded()
