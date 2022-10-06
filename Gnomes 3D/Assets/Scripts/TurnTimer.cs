@@ -28,7 +28,7 @@ public class TurnTimer : MonoBehaviour
     }*/
     void Start()
     {
-        InvokeRepeating("TimeRanOut", 12.0f, 12.0f);
+        InvokeRepeating("TimeRanOut", 13.0f, 13.0f);
     }
 
     private void Update()
