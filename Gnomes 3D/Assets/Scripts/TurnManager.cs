@@ -9,6 +9,7 @@ public class TurnManager : MonoBehaviour
 
     private void Awake()
     {
+
         if (instance == null)
         {
             instance = this;

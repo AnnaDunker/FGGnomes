@@ -1578,7 +1578,7 @@ Transform:
   m_Children:
   - {fileID: 1873696170}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &76447898 stripped
 Transform:
@@ -6198,14 +6198,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 364463024}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.6113827, y: 0.43148708, z: -0.8433151}
+  m_LocalRotation: {x: -0.09966705, y: -0, z: -0, w: 0.9950209}
+  m_LocalPosition: {x: 34.70138, y: 9.142666, z: 73.96098}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 433080626}
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_Father: {fileID: 963194228}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &366928525
 GameObject:
@@ -8642,7 +8642,7 @@ Transform:
   m_Children:
   - {fileID: 1050357406}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &523442077
 PrefabInstance:
@@ -14862,12 +14862,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6dca7e3e8871f044bf209aa14c87c06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShootingFX: {fileID: 8300000, guid: 9946d15b2bf751f4c848a6dfd32e69b2, type: 3}
-  audioSource: {fileID: 1086490979}
   projectilePrefab: {fileID: 1917647130882429783, guid: 2f1bd0a93a1bead4cbfa12bddf1f845c, type: 3}
   ShootingStartPosition: {fileID: 4571853980683354655}
   playerController: {fileID: 4571853981290208722}
   playerWeapon: {fileID: 956668574}
+  Timer: {fileID: 7024106604668108280}
+  shotCount: 0
 --- !u!1001 &960629179
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15102,7 +15102,8 @@ Transform:
   m_LocalPosition: {x: -31.09, y: 6.14, z: -75.148285}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 364463025}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 30.953, y: 0, z: 0}
@@ -18329,7 +18330,7 @@ Transform:
   m_Children:
   - {fileID: 1468327890}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1203159914 stripped
 Transform:
@@ -25173,12 +25174,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6dca7e3e8871f044bf209aa14c87c06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShootingFX: {fileID: 8300000, guid: 9946d15b2bf751f4c848a6dfd32e69b2, type: 3}
-  audioSource: {fileID: 1086490979}
-  projectilePrefab: {fileID: 1917647130882429783, guid: 503cb399c0a48064eaff2169fe7fe192, type: 3}
+  projectilePrefab: {fileID: 1917647130882429783, guid: 2f1bd0a93a1bead4cbfa12bddf1f845c, type: 3}
   ShootingStartPosition: {fileID: 152326353}
   playerController: {fileID: 6423711530040959513}
   playerWeapon: {fileID: 1635576722}
+  Timer: {fileID: 7024106604668108280}
+  shotCount: 0
 --- !u!1001 &1636462237
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32143,7 +32144,7 @@ Transform:
   m_Children:
   - {fileID: 345056423390374707}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &235132210936371594
 Animator:
@@ -37802,7 +37803,7 @@ Transform:
   m_Children:
   - {fileID: 3093663190538697234}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &3270843935403641002
 CapsuleCollider:
@@ -38022,7 +38023,7 @@ Transform:
   m_Children:
   - {fileID: 3955741438658743721}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3562106084472078191
 GameObject:
