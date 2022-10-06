@@ -7,7 +7,7 @@ public class Teleporter : MonoBehaviour
 
     private void OnTriggerEnter(Collider Teleport)
     {
-        Teleport.transform.position = new Vector3(Random.Range(-60.0f, 60.0f), Teleport.transform.position.y, Random.Range( -60.0f, 60.0f));
+        Teleport.transform.position = new Vector3(Random.Range(-120.0f, 120.0f), Teleport.transform.position.y, Random.Range( -120.0f, 100.0f));
     }
 
 }

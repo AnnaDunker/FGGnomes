@@ -19,7 +19,7 @@ public class CrosshairFunction : MonoBehaviour
 
             IEnumerator waiter()
             {
-                yield return new WaitForSeconds(1.85f);
+                yield return new WaitForSeconds(1f);
                 AimCrosshair.SetActive(true);
             }
         }

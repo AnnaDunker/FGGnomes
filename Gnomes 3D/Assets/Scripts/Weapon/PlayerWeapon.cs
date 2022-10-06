@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerWeapon : MonoBehaviour
 {
+    [SerializeField] private AudioClip ShootingFX;
+    [SerializeField] private AudioSource audioSource;
     [SerializeField] private GameObject projectilePrefab;
     [SerializeField] private Transform ShootingStartPosition;
     [SerializeField] private PlayerController playerController;
@@ -26,10 +28,11 @@ public class PlayerWeapon : MonoBehaviour
     {
         if (TurnManager.GetInstance().IsItPlayerTurn(playerController.playerIndex))
         {
-            if (Input.GetKeyDown(KeyCode.F))
+            if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 if (didShoot == false)
                 {
+                    audioSource.PlayOneShot(ShootingFX);
                     shotCount++;
                     GameObject newProjectile = Instantiate(projectilePrefab, ShootingStartPosition.position, transform.rotation);
 
@@ -57,7 +60,7 @@ public class PlayerWeapon : MonoBehaviour
 
             IEnumerator waiter()
             {
-                yield return new WaitForSeconds(15);
+                yield return new WaitForSeconds(12);
                 projectilePrefab.gameObject.SetActive(true);
                 shotCount = 0;
 
