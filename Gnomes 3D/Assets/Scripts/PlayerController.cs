@@ -92,7 +92,7 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
-        CharacterBody.velocity = Vector3.up * 8f;
+        CharacterBody.velocity = Vector3.up * 6f;
     }
 
     bool IsGrounded()
