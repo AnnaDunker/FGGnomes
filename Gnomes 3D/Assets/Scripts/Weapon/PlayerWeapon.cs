@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class PlayerWeapon : MonoBehaviour
 {
-    [SerializeField] private AudioClip ShootingFX;
-    [SerializeField] private AudioSource audioSource;
     [SerializeField] private GameObject projectilePrefab;
     [SerializeField] private Transform ShootingStartPosition;
     [SerializeField] private PlayerController playerController;
     [SerializeField] private GameObject playerWeapon;
-    
-    private int shotCount = 0;  
-    private bool didShoot;
+
+    public Timer Timer;
+    [HideInInspector] public int shotCount = 0;
 
     private void Start()
     {
@@ -30,10 +28,8 @@ public class PlayerWeapon : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
-                if (didShoot == false)
+                if (true)
                 {
-                    audioSource.PlayOneShot(ShootingFX);
-                    shotCount++;
                     GameObject newProjectile = Instantiate(projectilePrefab, ShootingStartPosition.position, transform.rotation);
 
                     newProjectile.GetComponent<Projectile>().Initialize();
@@ -41,40 +37,30 @@ public class PlayerWeapon : MonoBehaviour
             }
         }
 
-       /* if (TurnManager.GetInstance().IsItPlayerTurn(playerController.playerIndex))
-        {
-            StartCoroutine(waiter());
+        /* if (TurnManager.GetInstance().IsItPlayerTurn(playerController.playerIndex))
+         {
+             StartCoroutine(waiter());
 
-            IEnumerator waiter()
-            {
-                yield return new WaitForSeconds(7);
-                didShoot = false;
-            }
-        } */
-
-        if (shotCount == 3)
-        {
-            projectilePrefab.gameObject.SetActive(false);
-            
-            StartCoroutine(waiter());
-
-            IEnumerator waiter()
-            {
-                yield return new WaitForSeconds(12);
-                projectilePrefab.gameObject.SetActive(true);
-                shotCount = 0;
-
-            }
-
-            } 
+             IEnumerator waiter()
+             {
+                 yield return new WaitForSeconds(7);
+                 didShoot = false;
+             }
+         } */
     }
-
-   private void LateUpdate()
+    /*
+    IEnumerator wait()
     {
-        if (didShoot)
-        {
-            
-        }
+        Debug.Log("Bajs");
+        yield return new WaitForSeconds(12);
+        projectilePrefab.gameObject.SetActive(true);
+        shotCount = 0;
+
+    }
+    */
+    private void LateUpdate()
+    {
+
     }
 
 }
