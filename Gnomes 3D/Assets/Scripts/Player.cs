@@ -34,7 +34,7 @@ public class Player : MonoBehaviour
 
     public void ChangeHealth()
     {
-        currentHealth += 10;
+        currentHealth += 5;
         healthBar.SetHealth(currentHealth);
     }
 
