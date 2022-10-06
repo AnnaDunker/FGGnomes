@@ -14864,7 +14864,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShootingFX: {fileID: 8300000, guid: 9946d15b2bf751f4c848a6dfd32e69b2, type: 3}
   audioSource: {fileID: 1086490979}
-  projectilePrefab: {fileID: 1917647130882429783, guid: 503cb399c0a48064eaff2169fe7fe192, type: 3}
+  projectilePrefab: {fileID: 1917647130882429783, guid: 2f1bd0a93a1bead4cbfa12bddf1f845c, type: 3}
   ShootingStartPosition: {fileID: 4571853980683354655}
   playerController: {fileID: 4571853981290208722}
   playerWeapon: {fileID: 956668574}
@@ -43300,7 +43300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 20
   currentHealth: 0
-  healthBar: {fileID: 0}
+  healthBar: {fileID: 4225326373140294653}
 --- !u!114 &6423711530040959511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65293,7 +65293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 20
   currentHealth: 0
-  healthBar: {fileID: 0}
+  healthBar: {fileID: 4225326374539375130}
 --- !u!95 &8176704127037059540
 Animator:
   serializedVersion: 4
